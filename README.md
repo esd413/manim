@@ -19,8 +19,8 @@ Note, there are two versions of manim.  This repository began as a personal proj
 > 
 > **Note**: To install manim directly through pip, please pay attention to the name of the installed package. This repository is ManimGL of 3b1b. The package name is `manimgl` instead of `manim` or `manimlib`. Please use `pip install manimgl` to install the version in this repository.
 
-Manim runs on Python 3.7 or higher.
-
+Manim需要运行在Python3.7以及更高的版本中,
+但是所需要的pyglet库却需要运行在Python3.9及更高的版本中......,所以你需要安装Python3.9甚至更高版本，但是请不要安装最新版本，因为安装包还没有写出来。  
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building).
 
@@ -41,7 +41,8 @@ If you want to hack on manimlib itself, clone this repository and in that direct
 
 ```sh
 # Install manimgl
-pip install -e .
+pip install -e .#没有用，甚至没有将manimgl添加到坏境变量中
+pip install manimgl
 
 # Try it out
 manimgl example_scenes.py OpeningManimExample
