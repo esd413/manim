@@ -1,8 +1,8 @@
-from manimlib.imports import *
-
+from manimlib import *
+from manimlib.once_useful_constructs import graph_scene
 NEW_BLUE = "#68a8e1"
 
-class Thumbnail(GraphScene):
+class Thumbnail(graph_scene.GraphScene):
     CONFIG = {
         "y_max": 8,
         "y_axis_height": 5,
@@ -89,8 +89,10 @@ class Thumbnail(GraphScene):
             ShowCreation(graph),
         )
         # Animacion del punto a
-        self.add_foreground_mobject(graph_dot_p1)
-        self.add_foreground_mobject(graph_dot_p2)
+        #self.add_foreground_mobject(graph_dot_p1)
+        #self.add_foreground_mobject(graph_dot_p2)
+        self.add(graph_dot_p1)
+        self.add(graph_dot_p2)
         self.play(
             DrawBorderThenFill(input_triangle_p1),
             Write(x_label_p1),
@@ -170,7 +172,7 @@ class Thumbnail(GraphScene):
         # adding manim
         picture = Group(*self.mobjects)
         picture.scale(0.6).to_edge(LEFT, buff=SMALL_BUFF)
-        manim = TexText("Manim").set_height(1.5) \
+        manim = TexText('Manim').set_height(1.5) \
                                     .next_to(picture, RIGHT) \
                                     .shift(DOWN * 0.7)
         self.add(manim)
