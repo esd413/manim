@@ -21,7 +21,7 @@ Note, there are two versions of manim.  This repository began as a personal proj
 
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
-For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building).
+For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building).请确保你的Python版本小于3.11,原因是因为requirements.txt第25行明确规定Python版本一定要小于3.11（这应该是暂时的）
 
 
 ### Directly
@@ -36,7 +36,7 @@ manimgl
 
 For more options, take a look at the [Using manim](#using-manim) sections further below.
 
-If you want to hack on manimlib itself, clone this repository and in that directory execute:
+如果你想了解manimlib本身，克隆这个存储库，并在这里安装，先执行上一步（ps:除非你有很多时间去折腾pip install e .:
 
 ```sh
 # Install manimgl
@@ -49,7 +49,7 @@ manimgl example_scenes.py OpeningManimExample
 manim-render example_scenes.py OpeningManimExample
 ```
 
-### Directly (Windows)
+### Directly (Windows) 这一部分我没有安装成功，卡在pip install -e .,其实只要遵循上一块的内容就可以了。
 
 1. [Install FFmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows).
 2. Install a LaTeX distribution. [MiKTeX](https://miktex.org/download) is recommended.
@@ -92,8 +92,8 @@ manimgl example_scenes.py OpeningManimExample
 This should pop up a window playing a simple scene.
 
 Some useful flags include:
-* `-w` to write the scene to a file
-* `-o` to write the scene to a file and open the result
+* `-w` 将场景写入文件
+* `-o` 将场景写入文件并打开
 * `-s` to skip to the end and just show the final frame.
     * `-so` will save the final frame to an image and show it
 * `-n <number>` to skip ahead to the `n`'th animation of a scene.
@@ -104,7 +104,7 @@ Take a look at custom_config.yml for further configuration.  To add your customi
 Look through the [example scenes](https://3b1b.github.io/manim/getting_started/example_scenes.html) to get a sense of how it is used, and feel free to look through the code behind [3blue1brown videos](https://github.com/3b1b/videos) for a much larger set of example. Note, however, that developments are often made to the library without considering backwards compatibility with those old videos. To run an old project with a guarantee that it will work, you will have to go back to the commit which completed that project.
 
 ### Documentation
-Documentation is in progress at [3b1b.github.io/manim](https://3b1b.github.io/manim/). And there is also a Chinese version maintained by [**@manim-kindergarten**](https://manim.org.cn): [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
+官方文档在[3b1b.github.io/manim](https://3b1b.github.io/manim/)但并不完整. 有一个中文版本是由[**@manim-kindergarten**](https://manim.org.cn)翻译的: [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
 
 [manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox).
 
