@@ -22,7 +22,7 @@ Note, there are two versions of manim.  This repository began as a personal proj
 
 System requirements are [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (optional, if you want to use LaTeX).
 For Linux, [Pango](https://pango.gnome.org) along with its development headers are required. See instruction [here](https://github.com/ManimCommunity/ManimPango#building).请确保你的Python版本小于3.11,原因是因为requirements.txt第25行明确规定Python版本一定要小于3.11（这应该是暂时的）
-
+根据[issues](https://github.com/3b1b/manim/issues/2053),修改requirements.txt中numpy版本为1.24.0
 
 ### Directly
 
@@ -40,7 +40,7 @@ For more options, take a look at the [Using manim](#using-manim) sections furthe
 
 ```sh
 # Install manimgl
-#pip install -e .没有用，甚至没有将manimgl添加到坏境变量中
+#pip install -e .
 pip install manimgl
 
 # Try it out
