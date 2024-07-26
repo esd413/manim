@@ -1,12 +1,11 @@
-Manim's documentation
+Manim文档:从入门到劝退
 =====================
 
 .. image:: https://cdn.jsdelivr.net/gh/3b1b/manim@master/logo/white_with_name.png
 
-Manim is an animation engine for explanatory math videos. It's used to create precise animations programmatically, as seen in the videos
-at `3Blue1Brown <https://www.3blue1brown.com/>`_.
+Manim是一个用于解释性数学视频的动画引擎。它用于以编程方式创建精确的动画，如 `3Blue1Brown <https://www.3blue1brown.com/>`_所示。
 
-And here is a Chinese version of this documentation: https://docs.manim.org.cn/
+中文版本: https://docs.manim.org.cn/
 
 .. toctree::
    :maxdepth: 2
