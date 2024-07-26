@@ -10,7 +10,9 @@
 [![Manim Discord](https://img.shields.io/discord/581738731934056449.svg?label=discord&logo=discord)](https://discord.com/invite/bYCyhM9Kz2)
 [![docs](https://github.com/3b1b/manim/workflows/docs/badge.svg)](https://3b1b.github.io/manim/)
 
-Manim is an engine for precise programmatic animations, designed for creating explanatory math videos.
+Manim是一个用于精确编程的动画引擎，专为创建解释性数学视频而设计。  
+**WARNING**:其Manim库非常粗糙，请在自己心理承受范围内小心使用
+
 
 Note, there are two versions of manim.  This repository began as a personal project by the author of [3Blue1Brown](https://www.3blue1brown.com/) for the purpose of animating those videos, with video-specific code available [here](https://github.com/3b1b/videos).  In 2020 a group of developers forked it into what is now the [community edition](https://github.com/ManimCommunity/manim/), with a goal of being more stable, better tested, quicker to respond to community contributions, and all around friendlier to get started with. See [this page](https://docs.manim.community/en/stable/faq/installation.html#different-versions) for more details.
 
@@ -36,12 +38,12 @@ manimgl
 
 For more options, take a look at the [Using manim](#using-manim) sections further below.
 
-如果你想了解manimlib本身，克隆这个存储库，并在这里安装，先执行上一步（ps:除非你有很多时间去折腾pip install e .:
+
 
 ```sh
 # Install manimgl
-#pip install -e .
-pip install manimgl
+pip install -e .
+
 
 # Try it out
 manimgl example_scenes.py OpeningManimExample
@@ -94,8 +96,8 @@ This should pop up a window playing a simple scene.
 Some useful flags include:
 * `-w` 将场景写入文件
 * `-o` 将场景写入文件并打开
-* `-s` to skip to the end and just show the final frame.
-    * `-so` will save the final frame to an image and show it
+* `-s` 跳到最后，并显示最后一帧（没有渲染过程）
+    * `-so` 将最后一帧保存为图像并显示
 * `-n <number>` to skip ahead to the `n`'th animation of a scene.
 * `-f` to make the playback window fullscreen
 
