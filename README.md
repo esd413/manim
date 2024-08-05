@@ -1,20 +1,6 @@
-<p align="center">
-    <a href="https://github.com/3b1b/manim">
-        <img src="https://raw.githubusercontent.com/3b1b/manim/master/logo/cropped.png">
-    </a>
-</p>
-
-[![pypi version](https://img.shields.io/pypi/v/manimgl?logo=pypi)](https://pypi.org/project/manimgl/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
-[![Manim Subreddit](https://img.shields.io/reddit/subreddit-subscribers/manim.svg?color=ff4301&label=reddit&logo=reddit)](https://www.reddit.com/r/manim/)
-[![Manim Discord](https://img.shields.io/discord/581738731934056449.svg?label=discord&logo=discord)](https://discord.com/invite/bYCyhM9Kz2)
-[![docs](https://github.com/3b1b/manim/workflows/docs/badge.svg)](https://3b1b.github.io/manim/)
 
 Manim是一个用于精确编程的动画引擎，专为创建解释性数学视频而设计。  
-**WARNING**:其Manim库非常粗糙，请在自己心理承受范围内小心使用
-
-
-Note, there are two versions of manim.  This repository began as a personal project by the author of [3Blue1Brown](https://www.3blue1brown.com/) for the purpose of animating those videos, with video-specific code available [here](https://github.com/3b1b/videos).  In 2020 a group of developers forked it into what is now the [community edition](https://github.com/ManimCommunity/manim/), with a goal of being more stable, better tested, quicker to respond to community contributions, and all around friendlier to get started with. See [this page](https://docs.manim.community/en/stable/faq/installation.html#different-versions) for more details.
+此为esd413克隆manim1.6.1后进行个性化修改的版本。将不会保留（docs和部分README.md的内容）:)
 
 ## Installation
 > **WARNING:** These instructions are for ManimGL _only_. Trying to use these instructions to install [ManimCommunity/manim](https://github.com/ManimCommunity/manim) or instructions there to install this version will cause problems. You should first decide which version you wish to install, then only follow the instructions for your desired version.
@@ -51,10 +37,10 @@ manimgl example_scenes.py OpeningManimExample
 manim-render example_scenes.py OpeningManimExample
 ```
 
-### Directly (Windows) 这一部分我没有安装成功，卡在pip install -e .,其实只要遵循上一块的内容就可以了。
+### Directly (Windows) 
 
 1. [Install FFmpeg](https://www.wikihow.com/Install-FFmpeg-on-Windows).
-2. Install a LaTeX distribution. [MiKTeX](https://miktex.org/download) is recommended.
+2. Install a LaTeX distribution. Texlive is recommended.
 3. Install the remaining Python packages.
     ```sh
     git clone https://github.com/3b1b/manim.git
@@ -107,13 +93,5 @@ Look through the [example scenes](https://3b1b.github.io/manim/getting_started/e
 
 ### Documentation
 官方文档在[3b1b.github.io/manim](https://3b1b.github.io/manim/)但并不完整. 有一个中文版本是由[**@manim-kindergarten**](https://manim.org.cn)翻译的: [docs.manim.org.cn](https://docs.manim.org.cn/) (in Chinese).
-
-[manim-kindergarten](https://github.com/manim-kindergarten/) wrote and collected some useful extra classes and some codes of videos in [manim_sandbox repo](https://github.com/manim-kindergarten/manim_sandbox).
-
-
-## Contributing
-Is always welcome.  As mentioned above, the [community edition](https://github.com/ManimCommunity/manim) has the most active ecosystem for contributions, with testing and continuous integration, but pull requests are welcome here too.  Please explain the motivation for a given change and examples of its effect.
-
-
 ## License
-This project falls under the MIT license.
+本项目遵循MIT协议
