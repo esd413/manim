@@ -1,3 +1,4 @@
+#manim 窗口
 from __future__ import annotations
 
 import numpy as np

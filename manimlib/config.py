@@ -109,7 +109,7 @@ def parse_cli():
         parser.add_argument(
             "-i", "--gif",
             action="store_true",
-            help="Save the video as gif",
+            help="保持视频格式为gif",
         )
         parser.add_argument(
             "-t", "--transparent",
@@ -177,7 +177,7 @@ def parse_cli():
         )
         parser.add_argument(
             "-c", "--color",
-            help="Background color",
+            help="背景颜色",
         )
         parser.add_argument(
             "--leave_progress_bars",
@@ -197,7 +197,7 @@ def parse_cli():
         )
         parser.add_argument(
             "--video_dir",
-            help="Directory to write video",
+            help="输出视频的指定文件夹",
         )
         parser.add_argument(
             "--config_file",
@@ -256,7 +256,7 @@ def update_camera_config(config: Dict, args: Namespace):
     if args.color:
         try:
             camera_config.background_color = colour.Color(args.color)
-        except Exception:
+        except Exception as err:
             log.error("Please use a valid color")
             log.error(err)
             sys.exit(2)

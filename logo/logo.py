@@ -1,8 +1,8 @@
-from manimlib.imports import *
+from manimlib import *
 
 NEW_BLUE = "#68a8e1"
 
-class Thumbnail(GraphScene):
+class Thumbnail(VGroup):
     CONFIG = {
         "y_max": 8,
         "y_axis_height": 5,
@@ -12,14 +12,14 @@ class Thumbnail(GraphScene):
         self.show_function_graph()
 
     def show_function_graph(self):
-        self.setup_axes(animate=False)
+        self.add_axes(animate=False)
         def func(x):
             return 0.1 * (x + 3-5) * (x - 3-5) * (x-5) + 5
 
         def rect(x):
             return 2.775*(x-1.5)+3.862
-        recta = self.get_graph(rect,x_min=-1,x_max=5)
-        graph = self.get_graph(func,x_min=0.2,x_max=9)
+        recta = self.get_graph_label(rect,x_min=-1,x_max=5)
+        graph = self.get_graph_label(func,x_min=0.2,x_max=9)
         graph.set_color(NEW_BLUE)
         input_tracker_p1 = ValueTracker(1.5)
         input_tracker_p2 = ValueTracker(3.5)

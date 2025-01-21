@@ -38,7 +38,7 @@ directories:
 window:
   # The position of window on screen. UR -> Upper Right, and likewise DL -> Down and Left,
   # UO would be upper middle, etc.
-  position_string: UR
+  position_string: OO
   # If using multiple monitors, which one should show the window
   monitor_index: 0
   # If not full screen, the default to give it half the screen width
