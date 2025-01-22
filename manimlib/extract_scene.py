@@ -13,7 +13,7 @@ from manimlib.scene.scene import Scene
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    Module = importlib.util.types.ModuleType
+    from types import ModuleType as Module
     from typing import Optional
     from addict import Dict
 
@@ -170,6 +170,7 @@ def get_module(file_name: Optional[str], embed_line: Optional[int], is_reload: b
 
 
 def main(scene_config: Dict, run_config: Dict):
+    #print(run_config.file_name)
     module = get_module(run_config.file_name, run_config.embed_line, run_config.is_reload)
     all_scene_classes = get_scene_classes(module)
     scenes = get_scenes_to_render(all_scene_classes, scene_config, run_config)
