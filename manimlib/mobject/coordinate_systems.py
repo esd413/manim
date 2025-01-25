@@ -18,10 +18,10 @@ from manimlib.mobject.geometry import Line
 from manimlib.mobject.geometry import Rectangle
 from manimlib.mobject.number_line import NumberLine
 from manimlib.mobject.svg.tex_mobject import Tex
-from manimlib.mobject.types.dot_cloud import DotCloud
-from manimlib.mobject.types.surface import ParametricSurface
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.dot_cloud import DotCloud
+from manimlib.mobject.Types.surface import ParametricSurface
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.bezier import inverse_interpolate
 from manimlib.utils.dict_ops import merge_dicts_recursively
 from manimlib.utils.simple_functions import binary_search
@@ -35,7 +35,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Callable, Iterable, Sequence, Type, TypeVar, Optional
     from manimlib.mobject.mobject import Mobject
-    from manimlib.typing import ManimColor, Vect3, Vect3Array, VectN, RangeSpecifier, Self
+    from manimlib.typings import ManimColor, Vect3, Vect3Array, VectN, RangeSpecifier, Self
 
     T = TypeVar("T", bound=Mobject)
 

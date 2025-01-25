@@ -5,7 +5,7 @@ import numpy as np
 from manimlib.animation.animation import Animation
 from manimlib.animation.transform import Transform
 from manimlib.constants import ORIGIN
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.bezier import interpolate
 from manimlib.utils.rate_functions import there_and_back
 
@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     from typing import Callable
     from manimlib.mobject.mobject import Mobject
     from manimlib.scene.scene import Scene
-    from manimlib.typing import Vect3
+    from manimlib.typings import Vect3
 
 
 class Fade(Transform):

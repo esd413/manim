@@ -22,7 +22,7 @@ if TYPE_CHECKING:
     from typing import Callable, Iterable, Sequence, Tuple
 
     from manimlib.camera.camera import Camera
-    from manimlib.typing import ManimColor, Vect3, Vect3Array, Self
+    from manimlib.typings import ManimColor, Vect3, Vect3Array, Self
 
 
 class Surface(Mobject):

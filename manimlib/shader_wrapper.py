@@ -20,7 +20,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Optional, Tuple, Iterable
-    from manimlib.typing import UniformDict
+    from manimlib.typings import UniformDict
     from moderngl.vertex_array import VertexArray
     from moderngl.framebuffer import Framebuffer
 

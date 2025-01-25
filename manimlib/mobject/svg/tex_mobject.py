@@ -4,8 +4,8 @@ import re
 from pathlib import Path
 
 from manimlib.mobject.svg.string_mobject import StringMobject
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.color import color_to_hex
 from manimlib.utils.color import hex_to_int
 from manimlib.utils.tex_file_writing import latex_to_svg
@@ -15,7 +15,7 @@ from manimlib.logger import log
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from manimlib.typing import ManimColor, Span, Selector, Self
+    from manimlib.typings import ManimColor, Span, Selector, Self
 
 
 SCALE_FACTOR_PER_FONT_POINT = 0.001
@@ -236,7 +236,7 @@ class Tex(StringMobject):
         if not replace_all:
             parts = [parts[index]]
 
-        from manimlib.mobject.numbers import DecimalNumber
+        from manimlib.mobject.Numbers import DecimalNumber
 
         decimal_mobs = []
         for part in parts:

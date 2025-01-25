@@ -1,17 +1,18 @@
 from __future__ import annotations
 
 import math
-
+#import importlib
+#np = importlib.import_module('numpy')
 import numpy as np
 
 from manimlib.constants import BLUE, BLUE_D, BLUE_E, GREY_A, BLACK
 from manimlib.constants import IN, ORIGIN, OUT, RIGHT
 from manimlib.constants import PI, TAU
 from manimlib.mobject.mobject import Mobject
-from manimlib.mobject.types.surface import SGroup
-from manimlib.mobject.types.surface import Surface
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.surface import SGroup
+from manimlib.mobject.Types.surface import Surface
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.mobject.geometry import Polygon
 from manimlib.mobject.geometry import Square
 from manimlib.utils.bezier import interpolate
@@ -23,7 +24,7 @@ from manimlib.utils.space_ops import z_to_vector
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Tuple, TypeVar
-    from manimlib.typing import ManimColor, Vect3, Sequence
+    from manimlib.typings import ManimColor, Vect3, Sequence
 
     T = TypeVar("T", bound=Mobject)
 

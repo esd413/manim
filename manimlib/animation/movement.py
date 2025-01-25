@@ -11,7 +11,7 @@ if TYPE_CHECKING:
     import numpy as np
 
     from manimlib.mobject.mobject import Mobject
-    from manimlib.mobject.types.vectorized_mobject import VMobject
+    from manimlib.mobject.Types.vectorized_mobject import VMobject
 
 
 class Homotopy(Animation):

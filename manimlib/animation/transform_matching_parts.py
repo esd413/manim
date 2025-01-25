@@ -8,7 +8,7 @@ from manimlib.animation.fading import FadeInFromPoint
 from manimlib.animation.fading import FadeOutToPoint
 from manimlib.animation.transform import Transform
 from manimlib.mobject.mobject import Mobject
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.mobject.svg.string_mobject import StringMobject
 
 from typing import TYPE_CHECKING

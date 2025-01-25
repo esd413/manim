@@ -17,7 +17,7 @@ from manimlib.utils.simple_functions import clip
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from manimlib.typing import Vect3
+    from manimlib.typings import Vect3
 
 
 class CameraFrame(Mobject):

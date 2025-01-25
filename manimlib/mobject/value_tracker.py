@@ -7,7 +7,7 @@ from manimlib.utils.iterables import listify
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from manimlib.typing import Self
+    from manimlib.typings import Self
 
 
 class ValueTracker(Mobject):

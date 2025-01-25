@@ -9,8 +9,8 @@ from scipy.spatial.distance import cdist
 from manimlib.constants import WHITE
 from manimlib.logger import log
 from manimlib.mobject.svg.svg_mobject import SVGMobject
-from manimlib.mobject.types.vectorized_mobject import VMobject
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 from manimlib.utils.color import color_to_hex
 from manimlib.utils.color import hex_to_int
 from manimlib.utils.color import int_to_hex
@@ -19,7 +19,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Callable
-    from manimlib.typing import ManimColor, Span, Selector
+    from manimlib.typings import ManimColor, Span, Selector
 
 
 class StringMobject(SVGMobject, ABC):

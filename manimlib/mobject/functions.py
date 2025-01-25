@@ -5,13 +5,13 @@ import numpy as np
 
 from manimlib.constants import FRAME_X_RADIUS, FRAME_Y_RADIUS
 from manimlib.constants import YELLOW
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Callable, Sequence, Tuple
-    from manimlib.typing import ManimColor, Vect3
+    from manimlib.typings import ManimColor, Vect3
 
 
 class ParametricCurve(VMobject):

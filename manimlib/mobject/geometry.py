@@ -9,9 +9,9 @@ from manimlib.constants import GREY_A, RED, WHITE, BLACK
 from manimlib.constants import MED_SMALL_BUFF, SMALL_BUFF
 from manimlib.constants import DEG, PI, TAU
 from manimlib.mobject.mobject import Mobject
-from manimlib.mobject.types.vectorized_mobject import DashedVMobject
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import DashedVMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.bezier import quadratic_bezier_points_for_arc
 from manimlib.utils.iterables import adjacent_n_tuples
 from manimlib.utils.iterables import adjacent_pairs
@@ -32,7 +32,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Iterable, Optional
-    from manimlib.typing import ManimColor, Vect3, Vect3Array, Self
+    from manimlib.typings import ManimColor, Vect3, Vect3Array, Self
 
 
 DEFAULT_DOT_RADIUS = 0.08

@@ -19,13 +19,13 @@ from manimlib.mobject.geometry import Rectangle
 from manimlib.mobject.geometry import Square
 from manimlib.mobject.mobject import Group
 from manimlib.mobject.mobject import Mobject
-from manimlib.mobject.numbers import DecimalNumber
+from manimlib.mobject.Numbers import DecimalNumber
 from manimlib.mobject.svg.tex_mobject import Tex
 from manimlib.mobject.svg.text_mobject import Text
-from manimlib.mobject.types.dot_cloud import DotCloud
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VHighlight
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.dot_cloud import DotCloud
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VHighlight
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.scene.scene import Scene
 from manimlib.scene.scene import SceneState
 from manimlib.utils.family_ops import extract_mobject_family_members
@@ -35,7 +35,7 @@ from manimlib.utils.tex_file_writing import LatexError
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from manimlib.typing import Vect3
+    from manimlib.typings import Vect3
 
 
 SELECT_KEY = manim_config.key_bindings.select

@@ -11,7 +11,7 @@ from manimlib.mobject.mobject import Mobject
 from manimlib.mobject.svg.brace import Brace
 from manimlib.mobject.svg.tex_mobject import Tex
 from manimlib.mobject.svg.tex_mobject import TexText
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 from manimlib.utils.color import color_gradient
 from manimlib.utils.iterables import listify
 
@@ -19,7 +19,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Iterable
-    from manimlib.typing import ManimColor
+    from manimlib.typings import ManimColor
 
 
 EPSILON = 0.0001

@@ -5,7 +5,7 @@ import numpy as np
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import List
-    from manimlib.typing import ManimColor, Vect3
+    from manimlib.typings import ManimColor, Vect3
 
 # See manimlib/default_config.yml
 from manimlib.config import manim_config

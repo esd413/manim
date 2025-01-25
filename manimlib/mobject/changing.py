@@ -4,15 +4,15 @@ import numpy as np
 
 from manimlib.constants import BLUE_B, BLUE_D, BLUE_E, GREY_BROWN, WHITE
 from manimlib.mobject.mobject import Mobject
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.rate_functions import smooth
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Callable, List, Iterable
-    from manimlib.typing import ManimColor, Vect3, Self
+    from manimlib.typings import ManimColor, Vect3, Self
 
 
 class AnimatedBoundary(VGroup):

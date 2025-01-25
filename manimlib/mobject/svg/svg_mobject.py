@@ -15,13 +15,13 @@ from manimlib.mobject.geometry import Polygon
 from manimlib.mobject.geometry import Polyline
 from manimlib.mobject.geometry import Rectangle
 from manimlib.mobject.geometry import RoundedRectangle
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.images import get_full_vector_image_path
 from manimlib.utils.iterables import hash_obj
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from manimlib.typing import ManimColor, Vect3Array
+    from manimlib.typings import ManimColor, Vect3Array
 
 
 SVG_HASH_TO_MOB_MAP: dict[int, list[VMobject]] = {}

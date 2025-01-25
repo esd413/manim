@@ -51,14 +51,14 @@ from manimlib.mobject.geometry import Polygon
 from manimlib.mobject.geometry import Rectangle
 from manimlib.mobject.geometry import Square
 from manimlib.mobject.geometry import AnnularSector
-from manimlib.mobject.numbers import Integer
+from manimlib.mobject.Numbers import Integer
 from manimlib.mobject.shape_matchers import SurroundingRectangle
 from manimlib.mobject.svg.svg_mobject import SVGMobject
 from manimlib.mobject.svg.special_tex import TexTextFromPresetString
 from manimlib.mobject.three_dimensions import Prismify
 from manimlib.mobject.three_dimensions import VCube
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.mobject.svg.text_mobject import Text
 from manimlib.utils.bezier import interpolate
 from manimlib.utils.iterables import adjacent_pairs
@@ -73,7 +73,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Tuple, Sequence, Callable
-    from manimlib.typing import ManimColor, Vect3
+    from manimlib.typings import ManimColor, Vect3
 
 
 class Checkmark(TexTextFromPresetString):

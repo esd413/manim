@@ -3,7 +3,7 @@ from __future__ import annotations
 import numpy as np
 import pathops
 
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 
 
 # Boolean operations between 2D mobjects

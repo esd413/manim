@@ -6,14 +6,14 @@ import re
 
 from manimlib.constants import BLACK, WHITE
 from manimlib.mobject.svg.svg_mobject import SVGMobject
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 from manimlib.utils.tex_file_writing import latex_to_svg
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Iterable, List, Dict
-    from manimlib.typing import ManimColor
+    from manimlib.typings import ManimColor
 
 
 SCALE_FACTOR_PER_FONT_POINT = 0.001

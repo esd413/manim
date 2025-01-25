@@ -1,11 +1,12 @@
+from __future__ import annotations
 import pkg_resources
 
 __version__ = pkg_resources.get_distribution("manimgl").version
 
-from typing import TYPE_CHECKING
+#from typing import TYPE_CHECKING
 
-if TYPE_CHECKING:
-    from manimlib.typing import *
+
+from manimlib.typings import *
 
 from manimlib.constants import *
 
@@ -18,7 +19,7 @@ from manimlib.animation.fading import *
 from manimlib.animation.growing import *
 from manimlib.animation.indication import *
 from manimlib.animation.movement import *
-from manimlib.animation.numbers import *
+from manimlib.animation.numbers_a import *
 from manimlib.animation.rotation import *
 from manimlib.animation.specialized import *
 from manimlib.animation.transform import *
@@ -38,7 +39,7 @@ from manimlib.mobject.matrix import *
 from manimlib.mobject.mobject import *
 from manimlib.mobject.mobject_update_utils import *
 from manimlib.mobject.number_line import *
-from manimlib.mobject.numbers import *
+from manimlib.mobject.Numbers import *
 from manimlib.mobject.probability import *
 from manimlib.mobject.shape_matchers import *
 from manimlib.mobject.svg.brace import *
@@ -49,11 +50,11 @@ from manimlib.mobject.svg.special_tex import *
 from manimlib.mobject.svg.tex_mobject import *
 from manimlib.mobject.svg.text_mobject import *
 from manimlib.mobject.three_dimensions import *
-from manimlib.mobject.types.dot_cloud import *
-from manimlib.mobject.types.image_mobject import *
-from manimlib.mobject.types.point_cloud_mobject import *
-from manimlib.mobject.types.surface import *
-from manimlib.mobject.types.vectorized_mobject import *
+from manimlib.mobject.Types.dot_cloud import *
+from manimlib.mobject.Types.image_mobject import *
+from manimlib.mobject.Types.point_cloud_mobject import *
+from manimlib.mobject.Types.surface import *
+from manimlib.mobject.Types.vectorized_mobject import *
 from manimlib.mobject.value_tracker import *
 from manimlib.mobject.vector_field import *
 

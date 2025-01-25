@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from manimlib.constants import BLACK
 from manimlib.logger import log
-from manimlib.mobject.numbers import Integer
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Numbers import Integer
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 
 from typing import TYPE_CHECKING
 

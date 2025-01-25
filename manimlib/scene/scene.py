@@ -24,8 +24,8 @@ from manimlib.mobject.mobject import _AnimationBuilder
 from manimlib.mobject.mobject import Group
 from manimlib.mobject.mobject import Mobject
 from manimlib.mobject.mobject import Point
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.scene.scene_embed import InteractiveSceneEmbed
 from manimlib.scene.scene_embed import CheckpointManager
 from manimlib.scene.scene_file_writer import SceneFileWriter
@@ -39,7 +39,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Callable, Iterable, TypeVar, Optional
-    from manimlib.typing import Vect3
+    from manimlib.typings import Vect3
 
     T = TypeVar('T')
 

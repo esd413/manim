@@ -6,7 +6,7 @@ import numpy as np
 from manimlib.constants import GREY_C, YELLOW
 from manimlib.constants import ORIGIN, NULL_POINTS
 from manimlib.mobject.mobject import Mobject
-from manimlib.mobject.types.point_cloud_mobject import PMobject
+from manimlib.mobject.Types.point_cloud_mobject import PMobject
 from manimlib.utils.iterables import resize_with_interpolation
 
 from typing import TYPE_CHECKING
@@ -14,7 +14,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     import numpy.typing as npt
     from typing import Sequence, Tuple
-    from manimlib.typing import ManimColor, Vect3, Vect3Array, Self
+    from manimlib.typings import ManimColor, Vect3, Vect3Array, Self
 
 
 DEFAULT_DOT_RADIUS = 0.05

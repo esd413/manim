@@ -4,8 +4,8 @@ from manimlib.animation.animation import Animation
 from manimlib.animation.animation import prepare_animation
 from manimlib.mobject.mobject import _AnimationBuilder
 from manimlib.mobject.mobject import Group
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.bezier import integer_interpolate
 from manimlib.utils.bezier import interpolate
 from manimlib.utils.iterables import remove_list_redundancies

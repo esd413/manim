@@ -5,14 +5,14 @@ from manimlib.constants import DOWN, LEFT, RIGHT, UP
 from manimlib.constants import FRAME_WIDTH
 from manimlib.constants import MED_LARGE_BUFF, SMALL_BUFF
 from manimlib.mobject.geometry import Line
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 from manimlib.mobject.svg.tex_mobject import TexText
 
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from manimlib.typing import ManimColor, Vect3
+    from manimlib.typings import ManimColor, Vect3
 
 
 class BulletedList(VGroup):

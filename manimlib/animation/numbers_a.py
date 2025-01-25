@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from manimlib.animation.animation import Animation
-from manimlib.mobject.numbers import DecimalNumber
+from manimlib.mobject.Numbers import DecimalNumber
 from manimlib.utils.bezier import interpolate
 from manimlib.utils.simple_functions import clip
 

@@ -15,7 +15,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Sequence, Tuple
-    from manimlib.typing import Vect3
+    from manimlib.typings import Vect3
 
 
 class ImageMobject(Mobject):

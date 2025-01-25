@@ -4,16 +4,16 @@ import numpy as np
 
 from manimlib.constants import DOWN, LEFT, RIGHT, ORIGIN
 from manimlib.constants import DEG
-from manimlib.mobject.numbers import DecimalNumber
+from manimlib.mobject.Numbers import DecimalNumber
 from manimlib.mobject.svg.tex_mobject import Tex
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Sequence, Union, Optional
-    from manimlib.typing import ManimColor, Vect3, VectNArray, Self
+    from manimlib.typings import ManimColor, Vect3, VectNArray, Self
 
     StringMatrixType = Union[Sequence[Sequence[str]], np.ndarray[int, np.dtype[np.str_]]]
     FloatMatrixType = Union[Sequence[Sequence[float]], VectNArray]

@@ -4,13 +4,13 @@ from manimlib.animation.composition import LaggedStart
 from manimlib.animation.transform import Restore
 from manimlib.constants import BLACK, WHITE
 from manimlib.mobject.geometry import Circle
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     import numpy as np
-    from manimlib.typing import ManimColor
+    from manimlib.typings import ManimColor
 
 
 class Broadcast(LaggedStart):

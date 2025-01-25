@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import copy
+import importlib.util
 import inspect
 import sys
-
+import importlib
 from manimlib.module_loader import ModuleLoader
 
 from manimlib.config import manim_config
@@ -13,7 +14,7 @@ from manimlib.scene.scene import Scene
 
 from typing import TYPE_CHECKING
 if TYPE_CHECKING:
-    from types import ModuleType as Module
+    Module = importlib.util.types.Module
     from typing import Optional
     from addict import Dict
 

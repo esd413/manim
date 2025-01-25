@@ -7,7 +7,7 @@ from manimlib.constants import DOWN, LEFT, RIGHT, UP
 from manimlib.constants import WHITE
 from manimlib.mobject.svg.tex_mobject import Tex
 from manimlib.mobject.svg.text_mobject import Text
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 from manimlib.utils.paths import straight_path
 from manimlib.utils.bezier import interpolate
 
@@ -16,7 +16,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import TypeVar, Callable
     from manimlib.mobject.mobject import Mobject
-    from manimlib.typing import ManimColor, Vect3, Self
+    from manimlib.typings import ManimColor, Vect3, Self
 
     T = TypeVar("T", bound=VMobject)
 

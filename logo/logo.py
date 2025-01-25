@@ -2,7 +2,7 @@ from manimlib import *
 
 NEW_BLUE = "#68a8e1"
 
-class Thumbnail(VGroup):
+class Thumbnail(Scene):
     CONFIG = {
         "y_max": 8,
         "y_axis_height": 5,

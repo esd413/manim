@@ -8,15 +8,15 @@ from manimlib.constants import DL, DOWN, DR, LEFT, RIGHT, UL, UR
 from manimlib.constants import SMALL_BUFF
 from manimlib.mobject.geometry import Line
 from manimlib.mobject.geometry import Rectangle
-from manimlib.mobject.types.vectorized_mobject import VGroup
-from manimlib.mobject.types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Sequence
     from manimlib.mobject.mobject import Mobject
-    from manimlib.typing import ManimColor, Self
+    from manimlib.typings import ManimColor, Self
 
 
 class SurroundingRectangle(Rectangle):

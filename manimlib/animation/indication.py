@@ -22,8 +22,8 @@ from manimlib.mobject.geometry import Dot
 from manimlib.mobject.geometry import Line
 from manimlib.mobject.shape_matchers import SurroundingRectangle
 from manimlib.mobject.shape_matchers import Underline
-from manimlib.mobject.types.vectorized_mobject import VMobject
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VMobject
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 from manimlib.utils.bezier import interpolate
 from manimlib.utils.rate_functions import smooth
 from manimlib.utils.rate_functions import squish_rate_func
@@ -34,7 +34,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Callable
-    from manimlib.typing import ManimColor
+    from manimlib.typings import ManimColor
     from manimlib.mobject.mobject import Mobject
 
 

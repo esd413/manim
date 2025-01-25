@@ -16,7 +16,7 @@ from manimlib.mobject.geometry import Rectangle
 from manimlib.mobject.geometry import RoundedRectangle
 from manimlib.mobject.geometry import Square
 from manimlib.mobject.svg.text_mobject import Text
-from manimlib.mobject.types.vectorized_mobject import VGroup
+from manimlib.mobject.Types.vectorized_mobject import VGroup
 from manimlib.mobject.value_tracker import ValueTracker
 from manimlib.utils.color import rgb_to_hex
 from manimlib.utils.space_ops import get_closest_point_on_line
@@ -26,7 +26,7 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from typing import Callable
-    from manimlib.typing import ManimColor
+    from manimlib.typings import ManimColor
 
 
 # Interactive Mobjects
