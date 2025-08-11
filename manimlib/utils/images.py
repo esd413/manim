@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+# 图像
 import numpy as np
 from PIL import Image
 
@@ -12,7 +12,7 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Iterable
 
-
+#获取光栅图路径
 def get_full_raster_image_path(image_file_name: str) -> str:
     return find_file(
         image_file_name,
@@ -20,7 +20,7 @@ def get_full_raster_image_path(image_file_name: str) -> str:
         extensions=[".jpg", ".jpeg", ".png", ".gif", ""]
     )
 
-
+# 获取矢量图路径
 def get_full_vector_image_path(image_file_name: str) -> str:
     return find_file(
         image_file_name,

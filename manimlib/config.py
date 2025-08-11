@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+#设置
 import argparse
 import colour
 import importlib
@@ -19,7 +19,7 @@ if TYPE_CHECKING:
     from argparse import Namespace
     from typing import Optional
 
-
+#初始化manim设置
 def initialize_manim_config() -> Dict:
     """
     Return default configuration for various classes in manim, such as
@@ -50,7 +50,7 @@ def initialize_manim_config() -> Dict:
 
     return config
 
-
+#解析指令
 def parse_cli():
     try:
         parser = argparse.ArgumentParser()
@@ -78,27 +78,27 @@ def parse_cli():
         parser.add_argument(
             "-l", "--low_quality",
             action="store_true",
-            help="Render at 480p",
+            help="以480p的分辨率渲染",
         )
         parser.add_argument(
             "-m", "--medium_quality",
             action="store_true",
-            help="Render at 720p",
+            help="以720p的分辨率渲染",
         )
         parser.add_argument(
             "--hd",
             action="store_true",
-            help="Render at a 1080p",
+            help="以1080p的分辨率渲染",
         )
         parser.add_argument(
             "--uhd",
             action="store_true",
-            help="Render at a 4k",
+            help="以4k的分辨率渲染",
         )
         parser.add_argument(
             "-f", "--full_screen",
             action="store_true",
-            help="Show window in full screen",
+            help="全屏显示窗口",
         )
         parser.add_argument(
             "-p", "--presenter_mode",
@@ -137,7 +137,7 @@ def parse_cli():
         parser.add_argument(
             "-o", "--open",
             action="store_true",
-            help="Automatically open the saved file once its done",
+            help="完成渲染时自动打开已保存的文件",
         )
         parser.add_argument(
             "--finder",

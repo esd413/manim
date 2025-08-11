@@ -24,13 +24,14 @@ default:
     \usepackage{pifont}
     \DisableLigatures{encoding = *, family = * }
     \linespread{1}
+    \usepackage{chemfig}
 
 ctex:
   description: ""
   compiler: xelatex
   preamble: |-
     \usepackage[UTF8]{ctex}
-    \usepackage[english]{babel}
+  
     \usepackage{amsmath}
     \usepackage{amssymb}
     \usepackage{dsfont}
@@ -49,6 +50,7 @@ ctex:
     \usepackage{xeCJK}
     \setmainfont{Microsoft YaHei}
     \linespread{1}
+    \usepackage{chemfig}
 
 # Simplified TeX templates
 

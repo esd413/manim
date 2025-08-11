@@ -45,7 +45,7 @@ def run_scenes():
         except KeyboardInterrupt:
             break
 
-
+# 主入口
 def main():
     """
     Main entry point for ManimGL.

@@ -469,7 +469,7 @@ class InteractiveScene(Scene):
             nudge *= 10
         self.selection.shift(nudge * vect)
 
-    # Key actions
+    # 键盘操作
     def on_key_press(self, symbol: int, modifiers: int) -> None:
         super().on_key_press(symbol, modifiers)
         char = chr(symbol)

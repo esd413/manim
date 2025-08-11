@@ -1,3 +1,4 @@
+#速率函数
 from __future__ import annotations
 
 import numpy as np
@@ -9,11 +10,11 @@ from typing import TYPE_CHECKING
 if TYPE_CHECKING:
     from typing import Callable
 
-
+#线性
 def linear(t: float) -> float:
     return t
 
-
+#光滑
 def smooth(t: float) -> float:
     # Zero first and second derivatives at t=0 and t=1.
     # Equivalent to bezier([0, 0, 0, 1, 1, 1])

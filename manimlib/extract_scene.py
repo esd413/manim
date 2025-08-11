@@ -45,16 +45,16 @@ def prompt_user_for_choice(scene_classes):
         print(f"{str(idx).zfill(max_digits)}: {name}")
         name_to_class[name] = scene_class
     try:
-        user_input = input("\nSelect which scene to render (by name or number): ")
+        user_input = input("\n选择要渲染的场景（输入名称或编号）： ")
         return [
             name_to_class[split_str] if not split_str.isnumeric() else scene_classes[int(split_str) - 1]
             for split_str in user_input.replace(" ", "").split(",")
         ]
     except IndexError:
-        log.error("Invalid scene number")
+        log.error("场景编号无效")
         sys.exit(2)
     except KeyError:
-        log.error("Invalid scene name")
+        log.error("场景名称无效")
         sys.exit(2)
     except EOFError:
         sys.exit(1)
@@ -88,7 +88,7 @@ def scene_from_class(scene_class, scene_config: Dict, run_config: Dict):
 def note_missing_scenes(arg_names, module_names):
     for name in arg_names:
         if name not in module_names:
-            log.error(f"No scene named {name} found")
+            log.error(f"未找到名为{name}的场景")
 
 
 def get_scenes_to_render(all_scene_classes: list, scene_config: Dict, run_config: Dict):

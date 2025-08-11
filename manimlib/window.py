@@ -162,6 +162,7 @@ class Window(PygletWindow):
         self.scene.on_mouse_motion(point, d_point)
 
     @note_undrawn_event
+    #鼠标左键事件
     def on_mouse_drag(self, x: int, y: int, dx: int, dy: int, buttons: int, modifiers: int) -> None:
         super().on_mouse_drag(x, y, dx, dy, buttons, modifiers)
         if not self.scene:
@@ -171,6 +172,7 @@ class Window(PygletWindow):
         self.scene.on_mouse_drag(point, d_point, buttons, modifiers)
 
     @note_undrawn_event
+    #鼠标右键事件
     def on_mouse_press(self, x: int, y: int, button: int, mods: int) -> None:
         super().on_mouse_press(x, y, button, mods)
         if not self.scene:
@@ -179,6 +181,7 @@ class Window(PygletWindow):
         self.scene.on_mouse_press(point, button, mods)
 
     @note_undrawn_event
+    #鼠标释放事件
     def on_mouse_release(self, x: int, y: int, button: int, mods: int) -> None:
         super().on_mouse_release(x, y, button, mods)
         if not self.scene:
@@ -187,6 +190,7 @@ class Window(PygletWindow):
         self.scene.on_mouse_release(point, button, mods)
 
     @note_undrawn_event
+    #鼠标滚动事件
     def on_mouse_scroll(self, x: int, y: int, x_offset: float, y_offset: float) -> None:
         super().on_mouse_scroll(x, y, x_offset, y_offset)
         if not self.scene:

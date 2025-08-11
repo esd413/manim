@@ -171,8 +171,8 @@ class Scene(object):
         pass
 
     def construct(self) -> None:
-        # Where all the animation happens
-        # To be implemented in subclasses
+        # 所有动画渲染的入口
+        # 在子类中实现
         pass
 
     def tear_down(self) -> None:
@@ -191,9 +191,9 @@ class Scene(object):
         if self.window is None:
             return
         log.info(
-            "\nTips: Using the keys `d`, `f`, or `z` " +
-            "you can interact with the scene. " +
-            "Press `command + q` or `esc` to quit"
+            "\n提示: 使用按键 `d`, `f`, or `z` " +
+            "你可以与这个场景交互。 " +
+            "按`command + q` 或者 `esc`退出"
         )
         self.skip_animations = False
         while not self.is_window_closing():
@@ -271,6 +271,7 @@ class Scene(object):
 
     # Related to time
 
+    # 获取时间
     def get_time(self) -> float:
         return self.time
 

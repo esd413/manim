@@ -201,15 +201,15 @@ class TipableVMobject(VMobject):
         start, end = self.get_start_and_end()
         return get_norm(start - end)
 
-
+#圆弧
 class Arc(TipableVMobject):
     def __init__(
         self,
         start_angle: float = 0,
         angle: float = TAU / 4,
-        radius: float = 1.0,
+        radius: float = 1.0,#半径
         n_components: int = 8,
-        arc_center: Vect3 = ORIGIN,
+        arc_center: Vect3 = ORIGIN,#弧的中心
         **kwargs
     ):
         super().__init__(**kwargs)
@@ -246,7 +246,7 @@ class Arc(TipableVMobject):
         self.shift(point - self.get_arc_center())
         return self
 
-
+#
 class ArcBetweenPoints(Arc):
     def __init__(
         self,
@@ -282,7 +282,7 @@ class CurvedDoubleArrow(CurvedArrow):
         super().__init__(start_point, end_point, **kwargs)
         self.add_tip(at_start=True)
 
-
+#圆
 class Circle(Arc):
     def __init__(
         self,
@@ -317,7 +317,7 @@ class Circle(Arc):
     def get_radius(self) -> float:
         return get_norm(self.get_start() - self.get_center())
 
-
+#点（继承圆的）
 class Dot(Circle):
     def __init__(
         self,
@@ -339,7 +339,7 @@ class Dot(Circle):
             **kwargs
         )
 
-
+#小点
 class SmallDot(Dot):
     def __init__(
         self,
@@ -349,7 +349,7 @@ class SmallDot(Dot):
     ):
         super().__init__(point, radius=radius, **kwargs)
 
-
+#椭圆
 class Ellipse(Circle):
     def __init__(
         self,
@@ -438,7 +438,7 @@ class Annulus(VMobject):
         self.add_subpath(inner_path)
         self.shift(center)
 
-
+#线
 class Line(TipableVMobject):
     def __init__(
         self,
@@ -727,7 +727,7 @@ class StrokeArrow(Line):
             self.reset_tip()
         return self
 
-
+#箭头
 class Arrow(Line):
     tickness_multiplier = 0.015
 
@@ -889,7 +889,7 @@ class Arrow(Line):
         self.apply_matrix(mat, about_point=self.get_start())
         return self
 
-
+#向量
 class Vector(Arrow):
     def __init__(
         self,
@@ -901,7 +901,7 @@ class Vector(Arrow):
             direction = np.hstack([direction, 0])
         super().__init__(ORIGIN, direction, buff=buff, **kwargs)
 
-
+#三次贝塞尔曲线
 class CubicBezier(VMobject):
     def __init__(
         self,
@@ -914,7 +914,7 @@ class CubicBezier(VMobject):
         super().__init__(**kwargs)
         self.add_cubic_bezier_curve(a0, h0, h1, a1)
 
-
+#多边形
 class Polygon(VMobject):
     def __init__(
         self,
@@ -988,7 +988,7 @@ class RegularPolygon(Polygon):
         vertices = compass_directions(n, start_vect)
         super().__init__(*vertices, **kwargs)
 
-
+#三角形
 class Triangle(RegularPolygon):
     def __init__(self, **kwargs):
         super().__init__(n=3, **kwargs)
@@ -1038,7 +1038,7 @@ class ArrowTip(Triangle):
     def get_length(self) -> float:
         return get_norm(self.get_vector())
 
-
+#长方形
 class Rectangle(Polygon):
     def __init__(
         self,
@@ -1056,12 +1056,12 @@ class Rectangle(Polygon):
         self.move_to(mobject)
         return self
 
-
+#正方形
 class Square(Rectangle):
     def __init__(self, side_length: float = 2.0, **kwargs):
         super().__init__(side_length, side_length, **kwargs)
 
-
+#带圆角的长方形
 class RoundedRectangle(Rectangle):
     def __init__(
         self,

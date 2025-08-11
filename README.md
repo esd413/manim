@@ -27,7 +27,7 @@ Note, there are two versions of manim.  This repository began as a personal proj
 > [!Note]
 > **Note**: To install manim directly through pip, please pay attention to the name of the installed package. This repository is ManimGL of 3b1b. The package name is `manimgl` instead of `manim` or `manimlib`. Please use `pip install manimgl` to install the version in this repository.
 
-该Manim运行在Python3.8以及更高的版本。但请不要安装超过Python3.11及以上的版本，因为包括Scipy,matplotlib等Python标准库可能没有预编译该版本的whl，这将导致需要手动编译Python标准库。**Python一定要安装64位，**因为32位的Python很多标准库都要手动编译，而且只能在32位的系统上编译，不然就不能被32位的Python使用。**别问我是怎么知道的......** **Intel的用户安装的Python版本也是AMD64**想知道原因的请看[python下载包的时候，如何选择是win32，还是amd64的，其中的cp又是什么意思？](https://blog.csdn.net/qq_35889860/article/details/103269569)
+该Manim运行在Python3.8以及更高的版本。**Python一定要安装64位**，因为32位的Python很多标准库都要手动编译，而且只能在32位的系统上编译，不然就不能被32位的Python使用。 **Intel的用户安装的Python版本也是AMD64**想知道原因的请看[python下载包的时候，如何选择是win32，还是amd64的，其中的cp又是什么意思？](https://blog.csdn.net/qq_35889860/article/details/103269569)
 
 
 Manim所需的环境 [FFmpeg](https://ffmpeg.org/), [OpenGL](https://www.opengl.org/) and [LaTeX](https://www.latex-project.org) (可选的，如果你想使用Latex，没有Latex将无法编辑数学公式和文字，除非你只是用来画图形).
@@ -65,7 +65,7 @@ manim-render example_scenes.py OpeningManimExample
 2. 安装LaTeX发行版。 [Texlive](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/) 是被推荐的。
 3. Install the remaining Python packages.
     ```sh
-    git clone https://github.com/3b1b/manim.git
+    git clone https://github.com/esd413/manim.git
     cd manim
     pip install -e .
     manimgl example_scenes.py OpeningManimExample

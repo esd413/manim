@@ -28,6 +28,7 @@ def char_to_cahced_mob(char: str, **text_config):
         # like ^\circ or \dots
         return Tex(char, **text_config)
     else:
+        #return Text(char, **text_config)
         return Text(char, **text_config)
 
 
@@ -48,7 +49,8 @@ class DecimalNumber(VMobject):
         include_background_rectangle: bool = False,
         edge_to_fix: Vect3 = LEFT,
         font_size: float = 48,
-        text_config: dict = dict(),  # Do not pass in font_size here
+        #text_config: dict = dict(font='CMU Serif'),  # Do not pass in font_size here
+        text_config: dict = dict(),
         **kwargs
     ):
         self.num_decimal_places = num_decimal_places
@@ -131,7 +133,10 @@ class DecimalNumber(VMobject):
                 num_string = "+" + num_string[1:]
             else:
                 num_string = num_string[1:]
+        # 注释掉或删除这行代码
         num_string = num_string.replace("-", "–")
+        
+       
         return num_string
 
     def char_to_mob(self, char: str) -> Text:

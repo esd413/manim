@@ -24,7 +24,7 @@ if TYPE_CHECKING:
 
 class ShowPartial(Animation, ABC):
     """
-    Abstract class for ShowCreation and ShowPassingFlash
+    ShowCreation 和 ShowPassingFlash 的抽象类
     """
     def __init__(self, mobject: Mobject, should_match_start: bool = False, **kwargs):
         self.should_match_start = should_match_start

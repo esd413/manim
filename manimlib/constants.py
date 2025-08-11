@@ -34,7 +34,7 @@ DEFAULT_MOBJECT_TO_EDGE_BUFF: float = manim_config.sizes.default_mobject_to_edge
 DEFAULT_MOBJECT_TO_MOBJECT_BUFF: float = manim_config.sizes.default_mobject_to_mobject_buff
 
 
-# Standard vectors
+# 标准向量
 ORIGIN: Vect3 = np.array([0., 0., 0.])
 UP: Vect3 = np.array([0., 1., 0.])
 DOWN: Vect3 = np.array([0., -1., 0.])
@@ -59,7 +59,7 @@ BOTTOM: Vect3 = FRAME_Y_RADIUS * DOWN
 LEFT_SIDE: Vect3 = FRAME_X_RADIUS * LEFT
 RIGHT_SIDE: Vect3 = FRAME_X_RADIUS * RIGHT
 
-# Angles
+# 角度
 PI: float = np.pi
 TAU: float = 2 * PI
 DEG: float = TAU / 360
@@ -76,7 +76,7 @@ BOLD: str = "BOLD"
 
 DEFAULT_STROKE_WIDTH: float = manim_config.vmobject.default_stroke_width
 
-# Colors
+# 颜色
 BLUE_E: ManimColor = manim_config.colors.blue_e
 BLUE_D: ManimColor = manim_config.colors.blue_d
 BLUE_C: ManimColor = manim_config.colors.blue_c

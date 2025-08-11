@@ -118,7 +118,7 @@ def average_color(*colors: ManimColor) -> Color:
     rgbs = np.array(list(map(color_to_rgb, colors)))
     return rgb_to_color(np.sqrt((rgbs**2).mean(0)))
 
-
+#随机颜色
 def random_color() -> Color:
     return Color(rgb=tuple(np.random.random(3)))
 

@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     Scalable = TypeVar("Scalable", float, FloatArray)
 
 
-
+# Sigmoid函数（S型曲线）
 def sigmoid(x: float | FloatArray):
     return 1.0 / (1 + np.exp(-x))
 
@@ -65,19 +65,19 @@ def fdiv(a: Scalable, b: Scalable, zero_over_zero_value: Scalable | None = None)
 
     return np.true_divide(a, b, out=out, where=where)
 
-
+# 二分查找算法
 def binary_search(
     function: Callable[[float], float],
     target: float,
-    lower_bound: float,
-    upper_bound: float,
-    tolerance:float = 1e-4
+    lower_bound: float, # 搜索下界
+    upper_bound: float, # 搜索上界
+    tolerance:float = 1e-4 # 容差
 ) -> float | None:
-    lh = lower_bound
-    rh = upper_bound
-    mh = (lh + rh) / 2
+    lh = lower_bound # 左边界
+    rh = upper_bound # 右边界
+    mh = (lh + rh) / 2 # 中点
     while abs(rh - lh) > tolerance:
-        lx, mx, rx = [function(h) for h in (lh, mh, rh)]
+        lx, mx, rx = [function(h) for h in (lh, mh, rh)] # 计算左边界，中点，右边界的函数值
         if lx == target:
             return lx
         if rx == target:
@@ -85,17 +85,17 @@ def binary_search(
 
         if lx <= target and rx >= target:
             if mx > target:
-                rh = mh
+                rh = mh # 缩小右边界
             else:
-                lh = mh
+                lh = mh # 缩小左边界
         elif lx > target and rx < target:
-            lh, rh = rh, lh
+            lh, rh = rh, lh # 交换左右边界
         else:
             return None
-        mh = (lh + rh) / 2
+        mh = (lh + rh) / 2 # 更新中点
     return mh
 
-
+# 哈希
 def hash_string(string: str, n_bytes=16) -> str:
     hasher = hashlib.sha256(string.encode())
     return hasher.hexdigest()[:n_bytes]

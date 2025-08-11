@@ -138,7 +138,7 @@ class VMobject(Mobject):
             raise Exception("All submobjects must be of type VMobject")
         return super().add(*vmobjects)
 
-    # Colors
+    # 颜色
     def init_colors(self):
         self.set_stroke(
             color=self.stroke_color,

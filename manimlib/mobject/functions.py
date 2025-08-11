@@ -13,7 +13,7 @@ if TYPE_CHECKING:
     from typing import Callable, Sequence, Tuple
     from manimlib.typings import ManimColor, Vect3
 
-
+#使用参数方程绘制曲线
 class ParametricCurve(VMobject):
     def __init__(
         self,
@@ -66,7 +66,7 @@ class ParametricCurve(VMobject):
         if hasattr(self, "x_range"):
             return self.x_range
 
-
+#函数图像
 class FunctionGraph(ParametricCurve):
     def __init__(
         self,

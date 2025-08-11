@@ -90,7 +90,7 @@ class SurfaceMesh(VGroup):
 
 
 # 3D shapes
-
+#球
 class Sphere(Surface):
     def __init__(
         self,

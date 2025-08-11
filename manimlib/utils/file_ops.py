@@ -22,7 +22,7 @@ def guarantee_existence(path: str | Path) -> Path:
     path.mkdir(parents=True, exist_ok=True)
     return path.absolute()
 
-
+# 查找文件，返回相对路径，如果输入的是绝对路径，就返回绝对路径
 def find_file(
     file_name: str,
     directories: Iterable[str] | None = None,

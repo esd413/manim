@@ -21,7 +21,7 @@ if TYPE_CHECKING:
     from typing import Callable, Sequence, List, Tuple
     from manimlib.typings import Vect2, Vect3, Vect4, VectN, Matrix3x3, Vect3Array, Vect2Array
 
-
+#叉乘（3维向量和2维向量）
 def cross(
     v1: Vect3 | List[float],
     v2: Vect3 | List[float],
@@ -44,14 +44,15 @@ def cross(
     return out
 
 
+#取模（N维向量）
 def get_norm(vect: VectN | List[float]) -> float:
     return sum((x**2 for x in vect))**0.5
 
-
+#计算两向量之间的距离（N维向量）
 def get_dist(vect1: VectN, vect2: VectN):
     return get_norm(vect2 - vect1)
 
-
+#归一化（N维向量）
 def normalize(
     vect: VectN | List[float],
     fall_back: VectN | List[float] | None = None
@@ -181,15 +182,15 @@ def z_to_vector(vector: Vect3) -> Matrix3x3:
 
 def angle_of_vector(vector: Vect2 | Vect3) -> float:
     """
-    Returns polar coordinate theta when vector is project on xy plane
+    返回向量投影到 xy 平面上时的极坐标角度θ
+    使用math.atan2计算反正切值
     """
     return math.atan2(vector[1], vector[0])
 
 
 def angle_between_vectors(v1: VectN, v2: VectN) -> float:
     """
-    Returns the angle between two 3D vectors.
-    This angle will always be btw 0 and pi
+    返回两个三维向量之间的夹角。这个夹角始终在 0 到 π 之间
     """
     n1 = get_norm(v1)
     n2 = get_norm(v2)
